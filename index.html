@@ -257,7 +257,42 @@ footer .fl{display:flex;gap:16px;margin-top:12px}
 const CFG={email:"monicasubramaniam491@gmail.com",linkedin:"https://www.linkedin.com/in/monica-subramaniam-2a3006398",github:"https://github.com/monicasubramaniam",resume:""}; // fill in real links. resume: path or URL to your PDF, e.g. "resume.pdf"
 /* Add projects here. Fields: title, desc, tools[], questions[], status, caseStudy, github, dashboard, image
    Example: {title:"Sales Performance Analysis",desc:"One or two sentences.",tools:["Python","SQL","Power BI"],questions:["Which region drove profit?"],status:"Completed",caseStudy:"",github:"",dashboard:"",image:""} */
-const PROJECTS=[];
+const PROJECTS=[
+ 
+  {
+    title:"Healthcare Ticket & SLA Analytics",
+    desc:"Analyzed 49,999 synthetic healthcare support tickets to find where and why SLAs are breached, and built a Power BI dashboard for the operations team. SLA compliance is 91.61%, but Critical tickets breach at 95.33%, and Process Delay is the top root cause.",
+    tools:["Python","Pandas","Power BI"],
+    questions:[
+      "What percentage of tickets meet or breach their SLA targets?",
+      "Which ticket priorities and operational patterns are linked to higher breach rates?",
+      "What are the main causes of SLA breaches, and where can processes improve?"
+    ],
+    status:"Completed",
+    caseStudy:"",
+    github:"https://github.com/monicasubramaniam/Healthcare-SLA-Analytics",
+    dashboard:"",
+    image:"healthcare-dashboard.png"
+  },
+  {
+    title:"Customer Churn Analysis",
+    desc:"Analyzed 7,043 customers in the public IBM Telco dataset to see who leaves and when, and built a Power BI dashboard to support retention decisions. Overall churn is 26.54%, rising to 42.71% on month-to-month contracts.",
+    tools:["Python","Pandas","Matplotlib","SQL","Power BI"],
+    questions:[
+      "What is the overall customer churn rate?",
+      "Which contract types and payment methods are linked to higher churn?",
+      "How do internet service type and customer tenure relate to churn?",
+      "How do online security and monthly charges differ between customers who churn and those who stay?",
+      "Which customer segments may benefit from targeted retention strategies?"
+    ],
+    status:"Completed",
+    caseStudy:"",
+    github:"https://github.com/monicasubramaniam/Customer-Churn-Analysis",
+    dashboard:"",
+    image:"churn-dashboard.png"
+  }
+
+];
 /* ===================== */
 document.documentElement.classList.add("js");
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
