@@ -306,7 +306,7 @@ const L={H:"Hands-on",I:"Intermediate",W:"Working Knowledge",L:"Learning"};
 const SK={"Analysis & Visualization":["Data Analysis|W","Exploratory Data Analysis|W","Data Interpretation|W","Data Visualization|H","Power BI|W","KPI Analysis|H","Performance Analysis|H"],
 "Data Quality & Reporting":["Data Cleaning|H","Data Validation|H","Data Quality Checks|H","Data Reconciliation|H","Reporting|H","KPI Reporting|H","Process Documentation|H"],
 "Database & Querying":["SQL|H","Data Handling|H","Database Concepts|I","Table Structures|I","Basic Data Modeling|W"],
-"Tools & Technologies":["Microsoft Excel|H","Power BI|W","Python|W","Pandas|W","NumPy|W","Alteryx|H","DAX|L","Mainframe|W","Advanced Table Editor|H","Workbench Tools|H"],
+"Tools & Technologies":["Microsoft Excel|H","Power BI|W","Python|W","Pandas|W","NumPy|W","Alteryx|H","DAX|W","Mainframe|W","Advanced Table Editor|H","Workbench Tools|H"],
 "Professional":["Analytical Thinking","Problem Solving","Attention to Detail","Process Improvement","Communication","Stakeholder Collaboration"]};
 function tabs(el,names,cb){el.innerHTML="";names.forEach((n,i)=>{const b=document.createElement("button");b.className="tab";b.textContent=n;b.setAttribute("aria-pressed",i===0);b.onclick=()=>{[...el.children].forEach(c=>c.setAttribute("aria-pressed",c===b));cb(i?n:null)};el.appendChild(b)})}
 function skills(cat){$("#sg").innerHTML=Object.entries(SK).filter(([k])=>!cat||k===cat).flatMap(([,v])=>v).map(s=>{const[n,l]=s.split("|");return `<div class="card"><b>${n}</b>${l?`<span class="pill">${L[l]}</span>`:""}</div>`}).join("")}
